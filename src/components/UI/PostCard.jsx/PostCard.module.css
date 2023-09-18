@@ -1,0 +1,32 @@
+.post-card {
+  display: block;
+  background-color: #f0d791;
+  max-width: 50%;
+  text-align: center;
+  margin: 3em auto;
+  padding: 2em;
+  border-radius: 0.8em;
+  color: #372a4a
+}
+
+.post-card li {
+  list-style-type: none;
+}
+
+.post-card h2 {
+  text-transform: uppercase;
+  white-space: normal;
+  letter-spacing: 5px;
+}
+
+.post-card p {
+ letter-spacing: 5px;
+}
+
+.post-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  transform: scale(1.01);
+  transition: .4s all;
+}
+

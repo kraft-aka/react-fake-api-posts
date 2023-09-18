@@ -5,7 +5,7 @@ export const PostsList = (props) => {
   return (
     <ul>
       {props.posts.map((post) => (
-        <PostCard key={post.id} title={post.title} body={post.body} user={props.userId}/>
+        <PostCard key={post.id} title={post.title} body={post.body} />
       ))}
     </ul>
   );

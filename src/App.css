@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'JetBrains Mono', monospace;
 }
-
+/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +42,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

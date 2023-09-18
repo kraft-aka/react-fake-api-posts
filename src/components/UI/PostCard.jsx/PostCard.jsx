@@ -1,11 +1,11 @@
 import React from 'react'
+import classes from './PostCard.module.css';
 
 export const PostCard = (props) => {
   return (
-    <li key={props.id}>
+    <li className={classes['post-card']} key={props.id}>
       <h2>{props.title}</h2>
       <p>{props.body}</p>
-      <p>user: {props.userId}</p>
     </li>
   )
 }

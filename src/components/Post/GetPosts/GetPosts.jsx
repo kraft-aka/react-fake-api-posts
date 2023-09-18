@@ -24,7 +24,7 @@ export const GetPosts = () => {
 
       const data = await response.json();
       setPosts(data);
-      console.log(data);
+      //console.log(data);
     } catch (err) {
       setError(err.message || "Something went wrong!");
     }
@@ -38,8 +38,10 @@ export const GetPosts = () => {
 
 
   return (
-    <div>
-      <PostsList posts={posts} id={id} title={title} body={body} user={userId}/>
-    </div>
+    <section>
+      {!isLoading && posts.length > 0 && <PostsList posts={posts}/>}
+      {!isLoading && error && <p>{error}</p>}
+      {isLoading && <p>Loading...</p> }
+    </section>
   );
 };
