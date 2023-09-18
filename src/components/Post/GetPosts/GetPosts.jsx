@@ -25,11 +25,10 @@ export const GetPosts = () => {
       const data = await response.json();
       setPosts(data);
       //console.log(data);
-    } catch (err) {
-      setError(err.message || "Something went wrong!");
+    } catch (error) {
+      setError(error.message || "Something went wrong!");
     }
     setIsLoading(false);
-    setError(null)
   };
 
   useEffect(() => {

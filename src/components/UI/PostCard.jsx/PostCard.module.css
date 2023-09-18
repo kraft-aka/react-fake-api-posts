@@ -6,7 +6,8 @@
   margin: 3em auto;
   padding: 2em;
   border-radius: 0.8em;
-  color: #372a4a
+  color: #372a4a;
+  opacity: 0.65;
 }
 
 .post-card li {
@@ -27,6 +28,7 @@
   cursor: pointer;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   transform: scale(1.01);
+  opacity: 1;
   transition: .4s all;
 }
 
